@@ -257,8 +257,17 @@ h6 {
 }
 
 @media (max-width: 1200px) {
+
+  .hero {
+    height: 85vh;
+  }
+
   .header .logo {
     order: 1;
+  }
+
+  .hero-img img {
+    width: 70%;
   }
 
   .header .btn-getstarted {
@@ -854,8 +863,12 @@ section,
 }
 
 @media (max-width: 640px) {
+  .header .logo h1 {
+    font-size: 23px;
+  }
+
   .hero h1 {
-    font-size: 28px;
+    font-size: 33px;
     line-height: 36px;
   }
 
