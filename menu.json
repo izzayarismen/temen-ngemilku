@@ -1,0 +1,96 @@
+[
+  {
+    "name": "Regular Pack",
+    "image": "assets/img/menu/regular.jpeg",
+    "description": [
+      "Ukuran 20x20cm",
+      "Isi 36 potong brownies",
+      "Bebas pilih 6 topping",
+      "Free pita dan hangtag"
+    ],
+    "price": "Rp 55.000"
+  },
+  {
+    "name": "Personal Pack",
+    "image": "assets/img/menu/personal.jpeg",
+    "description": [
+      "Ukuran 20x10cm",
+      "Isi 18 potong brownies",
+      "Bebas pilih 6 topping",
+      "Free pita dan hangtag"
+    ],
+    "price": "Rp 35.000"
+  },
+  {
+    "name": "Mini Pack",
+    "image": "assets/img/menu/mini.jpeg",
+    "description": [
+      "Ukuran 10x10cm",
+      "Isi 9 potong brownies",
+      "Bebas pilih 6 topping",
+      "Free pita dan hangtag"
+    ],
+    "price": "Rp 18.000"
+  },
+  {
+    "name": "Jumbo Pack",
+    "image": "assets/img/menu/jumbo.jpeg",
+    "description": [
+      "Ukuran 20x27cm",
+      "Isi 48 potong brownies",
+      "Bebas pilih 6 topping",
+      "Free pita dan hangtag"
+    ],
+    "price": "Rp 80.000"
+  },
+  {
+    "name": "Brownie Bites",
+    "image": "assets/img/menu/brownie.png",
+    "description": [
+      "Isi ± 150gr brownies",
+      "Bebas pilih 1 topping",
+      "Dan 1 macam saus"
+    ],
+    "price": "Rp 23.000"
+  },
+  {
+    "name": "Donat Kentang",
+    "image": "assets/img/menu/donat.jpeg",
+    "description": [
+      "Isi 3 Rp 10.000",
+      "Isi 6 Rp 20.000",
+      "Isi 12 Rp 40.000",
+      "Kombinasi Topping by Request"
+    ],
+    "price": ""
+  },
+  {
+    "name": "Saus",
+    "image": "",
+    "description": [
+      "Coklat, Hazzlenut, Choco Crunchy",
+      "Tiramisu, Matcha, Vanilla"
+    ],
+    "price": ""
+  },
+  {
+    "name": "Toppings",
+    "image": "",
+    "description": [
+      "Almond, Keju, Oreo, Chocochips",
+      "Red Velvet Crumble, Matcha Crumble",
+      "Kacang Cincang, Nuttela",
+      "Lotus Biscoff Spread, Lotus Biscoff Biscuit"
+    ],
+    "price": ""
+  },
+  {
+    "name": "Custom Huruf",
+    "image": "",
+    "description": [
+      "Terbuat dari coklat putih premium",
+	  "Harga Rp 200/huruf"
+    ],
+    "price": " "
+  }
+]

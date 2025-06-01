@@ -1,0 +1,34 @@
+[
+  {
+    "question": "Bagaimana cara order?",
+    "answer": "Kontak ke WhatsApp (Order Now) kemudian akan dikirimi format order."
+  },
+  {
+    "question": "Apakah bisa pesan custom topping?",
+    "answer": "Bisa! Pemesanan custom topping maksimal H-1."
+  },
+  {
+    "question": "Apakah orderan bisa diantar?",
+    "answer": "Bisa untuk wilayah Purwokerto Kota dengan jarak maksimal 4 km."
+  },
+  {
+    "question": "Berapa minimal DP untuk fix order?",
+    "answer": "DP 50% dari total pesanan."
+  },
+  {
+    "question": "Berapa maksimal hari untuk order sebelum pesanan jadi?",
+    "answer": "Kami menerima pesanan maksimal H-1 sebelum pesanan jadi."
+  },
+  {
+    "question": "Berapa maksimal hari untuk pembatalan order?",
+    "answer": "Kami menerima pembatalan order hingga hari H."
+  },
+  {
+    "question": "Berapa persen uang yang dikembalikan saat pembatalan order?",
+    "answer": "Uang yang dikembalikan adalah 50% dari biaya total pesanan."
+  },
+  {
+    "question": "Apa saja metode pembayaran yang tersedia?",
+    "answer": "Transfer Bank, COD, Cash, QRIS, dan E-Wallet lainnya."
+  }
+]

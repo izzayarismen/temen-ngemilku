@@ -92,7 +92,7 @@
       mirror: false
     });
   }
-  window.addEventListener('load', aosInit);
+  document.addEventListener('DOMContentLoaded', aosInit);
 
   /**
    * Initiate glightbox
@@ -110,18 +110,18 @@
    * Init swiper sliders
    */
   function initSwiper() {
-    document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
-      let config = JSON.parse(
-        swiperElement.querySelector(".swiper-config").innerHTML.trim()
-      );
+  document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
+    let config = JSON.parse(
+      swiperElement.querySelector(".swiper-config").innerHTML.trim()
+    );
 
-      if (swiperElement.classList.contains("swiper-tab")) {
-        initSwiperWithCustomPagination(swiperElement, config);
-      } else {
-        new Swiper(swiperElement, config);
-      }
-    });
-  }
+    new Swiper(swiperElement, config);
+
+    setTimeout(() => {
+      AOS.refresh();
+    }, 200);
+  });
+}
 
   window.addEventListener("load", initSwiper);
 
@@ -166,3 +166,44 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+// Fungsi mengambil data dari menu.json
+function loadMenuItems() {
+  fetch('menu.json')
+    .then(response => response.json())
+    .then(data => {
+      const container = document.getElementById('menu-container');
+      container.innerHTML = '';
+
+      data.forEach(item => {
+        const descHTML = item.description.map(line => {
+          return line.replace(/(Rp\s?\d+\.?\d*)/gi, '<b class="text-danger">$1</b>');
+        }).join('<br>');
+
+        const priceHTML = item.price
+          ? `<p class="price">${item.price}</p>`
+          : '';
+
+        const imageHTML = item.image
+          ? `<a href="${item.image}" class="glightbox"><img src="${item.image}" class="menu-img img-fluid" alt="${item.name}"></a>`
+          : '';
+
+        container.innerHTML += `
+          <div class="col-lg-4 menu-item" data-aos="fade-up">
+            ${imageHTML}
+            <h4>${item.name}</h4>
+            <p class="ingredients">${descHTML}</p>
+            ${priceHTML}
+          </div>
+        `;
+      });
+
+      if (typeof GLightbox === 'function') GLightbox({ selector: '.glightbox' });
+
+      if (typeof AOS !== 'undefined') AOS.refresh();
+    })
+    .catch(error => console.error('Gagal memuat menu:', error));
+}
+
+// Panggil saat halaman selesai diload
+window.addEventListener('load', loadMenuItems);
